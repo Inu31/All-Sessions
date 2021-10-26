@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Session30</title>
+    </head>
+    <body>
+        <button onclick="emp_details();">Employee Details</button>
+          <button onclick="car_prop();">Car Properties</button>
+          <button onclick="todays_date();">Today's date</button>
+          <button onclick="display();">Click</button>
+        <script type="text/javascript">
+        function emp_details(){
+            emp={
+                id:1,
+                name:"Anirban",
+                address:"Dehli"
+            }
+            alert(" Employee ID: "+emp.id+ "\n Employee Name: "+emp.name+  " \n Employee address: "+emp.address)
+        } 
+           
+          function car_prop(){
+              car={
+                  model_no:7878,
+                  Name:"Honda City",
+                  Colour:"White",
+                  Engine_CC:1498
+              }
+              alert("Model No. : " +car.model_no+ "\nName of car: "+car.Name+ "\nColour of car: "+car.Colour+ "\nEngine CC:"+car.Engine_CC)
+          }
+          function todays_date(){
+           var d = new Date();
+           alert("whole date: " +d+"\ntoday's date: "+d.getDate()+"\nweek day: "+d.getDay()+ "\nthis month: " +d.getMonth())
+          }
+          function display(){
+              var d = prompt("enter any number");
+              alert(d)
+          }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java</title>
+        <Style>
+            #id1{
+                color:blue
+            }
+        </Style>
+    </head>
+    <body>
+        <button onclick="show_message();">Click Me</button>
+        <button onclick="show_message2();">Click Me2</button>
+        <button onclick="show_message3();">Click Me3</button>
+        <button onclick="my_age();">Click Me4</button>
+        <button onclick="i_am();">Click Me5</button>
+        <button onclick="my_address();">My address</button>
+
+        <p id="id1"></p>
+        <script type="text/javascript">
+        function show_message(){
+        alert("Hi I am Anirban");
+        }
+        function show_message2(){
+         alert("Where are you from?");
+        }
+        function show_message3(){
+            alert("I am from dehli");
+        }
+        function my_age(){
+            var a=13;
+            alert("My age is "+a
+            );
+        }
+        function i_am (){
+        var b=13;
+        alert("I am "+b+" years old")
+        }
+        function my_address(){
+            document.getElementById("id1").innerHTML="I am from Dehli.";
+        }
+        </script>
+    </body>
+</html>
