@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Session39</title>
+    </head>
+    <body>
+        <button onclick="number();">Check Number</button>
+        <button onclick="oddoreven();">Check even or odd</button>
+        <button onclick="click1();">Switch case</button>
+        <script type="text/javascript">
+        function number(){
+            var a=prompt("Enter number to check negative or positive")
+            if(a>=0){
+            alert("The number is positive")
+            }
+            else 
+            alert("The number is negative")
+        }
+        function oddoreven(){
+        var b=prompt("Enter the number to check number is odd or even")
+        if(b%2==1){
+            alert("Number is odd")
+        }
+        else {
+            alert("Number is even")
+        }
+    }
+    function click1(){
+        var c=prompt("Enter a number between 1-5");
+        switch(c){
+            case "1":alert("One");
+            break;
+            case"2":alert("Two");
+            break;
+            case"3":alert("Three");
+            break;
+            case"4":alert("Four");
+            break;
+            case"5":alert("Five");
+            break;
+            default:alert("Enter a number from 1-5 only");
+        }
+    }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <button onclick="vote();">Click to verify age</button>
+        <button onclick="age();">See your age</button>
+        <script type="text/javascript">
+            function vote(){
+                var a=prompt("Enter your age")
+                if (a >= 18){
+                    alert("You can vote");
+                }else{
+                    alert("You cannot vote")
+                }
+            }
+            function age(){
+                var b=prompt("Enter your age");
+                if(b<=13){
+                alert("You are a kid :)");
+                }else if(b >=13 && b<=18 ){
+                        alert("You're a teen :)");
+                }else {
+                    alert("You're a adult :)");
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Session33</title>
+        <style type="text/css">
+        .div1{
+        height: 200px;
+        width:250px;
+        background-color:red;
+        animation-name: colorok;
+        animation-duration:2s;
+        animation-iteration-count:infinite;
+        }
+        @keyframes colorok {
+            from{background-color: yellow;}
+            to{background-color: blue;}
+        }
+        .div2{
+            height: 400px;
+            width: 400px;
+            background-color: yellowgreen;
+            animation-name: multiplecolor;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes multiplecolor{
+           0%{background-color:tomato;}
+           25%{background-color: violet;}
+           50%{background-color: turquoise;}
+           75%{background-color: rgb(202, 223, 17);}
+           100%{background-color: rgb(90, 47, 7);}
+        }
+        .div3{
+            height: 350px;
+            width: 350px;
+            background-color: firebrick;
+            animation-name: rolling;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            border-radius: 100%;
+        }
+        @keyframes rolling{
+            0%{background-color:gold;}
+           20%{background-color:gray;}
+           40%{background-color:indigo;}
+           60%{background-color: rgb(120, 133, 8);}
+           80%{background-color: rgb(201, 108, 22);}
+           100%{background-color:lavender}
+        }
+        </style>
+    </head>
+    <body>
+        <h2>2 color change for div</h2>
+        <div class="div1">
+        </div>
+
+        <h2>multiple color change for div</h2>
+        <div class="div2">
+        </div>
+         
+        <h2>Multiple color change for circle</h2>
+        <div class="div3">
+        </div>
+    </body>
+</html>
